@@ -33,14 +33,15 @@ packer build -only=virtualbox-iso debian9.json
 
 *If you omit the keyword "-only=" both the Workstation and Virtualbox VMs will be created.*
 
-By default the .iso of Debian 9 is pulled from <https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.4.0-amd64-netinst.iso>
+By default the .iso of Debian 9 is pulled from <https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.6.0-amd64-netinst.iso>
 
 You can change the URL to one closer to your build server. To do so change the **"iso_url"** parameter in the **"variables"** section of the debian9.json file.
 
 ```json
 {
   "variables": {
-      "iso_url": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.4.0-amd64-netinst.iso"
+      "iso_url": "https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-9.6.0-amd64-netinst.iso"
+  }
 }
 ```
 
